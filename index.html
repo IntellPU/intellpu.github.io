@@ -56,7 +56,9 @@
         <!--=====================================-->
         <!--=        Header Area Start       	=-->
         <!--=====================================-->
-        <header class="header axil-header header-style-3">
+        
+
+        <header class="header axil-header header-style-1">
             <div id="axil-sticky-placeholder"></div>
             <div class="axil-mainmenu">
                 <div class="container">
@@ -66,18 +68,43 @@
                             <a href="index-1.html"><img class="dark-version-logo" src="assets/media/logo/logo_white.png" width="200px" alt="logo"></a>
                             <a href="index-1.html"><img class="sticky-logo" src="assets/media/logo/logo_black.png" width="200px" alt="logo"></a>
                         </div>
+                        <div class="header-main-nav">
+                            <!-- Start Mainmanu Nav -->
+                            <nav class="mainmenu-nav " id="mobilemenu-popup">
+                                <div class="d-block d-lg-none">
+                                    <div class="mobile-nav-header">
+                                        <div class="mobile-nav-logo">
+                                            <a href="index-1.html">
+                                                <img class="light-mode" src="assets/media/logo-2.svg" alt="Site Logo">
+                                                <img class="dark-mode" src="assets/media/logo-3.svg" alt="Site Logo">
+                                            </a>
+                                        </div>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <ul class="mainmenu">
+                                    
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <!-- <li><a href="#events">Upcoming Event</a></li> -->
+                                    <li><a href="#team">Out Team</a></li>
+                                    <li><a href="#join">Join Us</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <!-- End Mainmanu Nav -->
+                        </div>
                         <div class="header-action">
                             <ul class="list-unstyled">
-                                <li class="header-social-link">
-                                    <ul class="social-icon-list list-unstyled">
-                                        <!-- <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li> -->
-                                        <li><a href="https://twitter.com/intellpu"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/intellpu"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="https://www.instagram.com/intellpu/"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="sidemenu-btn">
+                                <li class="sidemenu-btn d-lg-block d-none">
                                     <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </li>
+                                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
+                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -106,7 +133,7 @@
         <!--=====================================-->
         <!--=        Banner Area Start          =-->
         <!--=====================================-->
-        <section class="banner banner-style-3">
+        <section class="banner banner-style-3" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -115,7 +142,7 @@
                             <h1 class="title" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">Intel IoT Community</h1>
                             
                             <div class="btn-group" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">
-                                <a href="#contact" class="axil-btn btn-fill-primary btn-large">Stay Tuned!</a>
+                                <a href="#contact" class="axil-btn btn-fill-primary btn-large">Join The Community</a>
                                 <!-- <a href="about-us.html" class="about-btn">About Me</a> -->
                             </div>
                         </div>
@@ -152,33 +179,148 @@
             </ul>
         </section>
      
-      
-    
-        <section class="section-padding bg-color-dark" id='contact'>
+        <!--=====================================-->
+        <!--=        About Area Start         =-->
+        <!--=====================================-->
+        <section class="section section-padding-equal bg-color-light" id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000">
-                        <div class="contact-address mb--30">
-                            <div class="section-heading heading-light-left">
-                                <span class="subtitle">Coming Soon</span>
-                                <h2 class="title">Join The Community and Stay Tuned!</h2>
-                            </div>
-                            <div class="address-list">
-                                <div class="address">
-                                    <h6 class="title">Mail</h6>
-                                    <p><a href="mailto:inteliotlpu@gmail.com">inteliotlpu@gmail.com</a></p>
-                                </div>
-                                <!-- <div class="address">
-                                    <h6 class="title">Address</h6>
-                                    <p>Warnwe Park Streetperrine, FL 33157 New York City</p>
-                                </div> -->
-                            
+                <div class="row align-items-center">
+                
+                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                        <div class="case-study-featured-thumb">
+                            <img src="assets/media/others/case-study-5.png" alt="travel">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-6 offset-xl-1" data-sal="slide-up" data-sal-duration="800">
+                        <div class="about-us">
+                            <div class="section-heading heading-left mb-0">
+                                <span class="subtitle">About Us</span>
+                                <h2 class="title mb--40">Welcome to the Community</h2>
+                                <p>Welcome to the intel iot, Amplify your impact and bring together your peers to learn new skills, solve real-world problems, and build communities across the globe. Connect with other students who share your passion in focused League. By joining Intel iot, Students grow their to enhance their deep-learning skills and learn about the cutting-edge hardware and software products. Grow Apply your new leanings and connections to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn as well.</p>
+                                <!-- <p>Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero. </p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-                        <div class="contact-form-box mb--30">
-                            <h3 class="title">Join The Mail List</h3>
+
+                </div>
+            </div>
+            <ul class="shape-group-6 list-unstyled">
+                <li class="shape shape-1"><img src="assets/media/others/bubble-7.png" alt="Bubble"></li>
+                <li class="shape shape-2"><img src="assets/media/others/line-4.png" alt="line"></li>
+                <li class="shape shape-3"><img src="assets/media/others/line-5.png" alt="line"></li>
+            </ul>
+        </section>
+
+          <!--=====================================-->
+        <!--=           Team  Area Start        =-->
+        <!--=====================================-->
+        <section class="section section-padding bg-color-dark pb--70 pb_lg--20 pb_md--0" id="team"> 
+            <div class="container">
+                <div class="section-heading heading-light">
+                    <span class="subtitle">Our valus</span>
+                    <h2 class="title mb--50">Meet The Team</h2>
+                    <!-- <p>Nulla facilisi. Nullam in magna id dolor
+                        blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p> -->
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="team-grid active">
+                            <div class="thumbnail">
+                                <a href="https://www.linkedin.com/in/iamakhilsnair/">
+                                    <img src="assets/media/team/akhil.jpeg" alt="Team Member">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="https://www.linkedin.com/in/iamakhilsnair/">Akhil S Nair</a></h4>
+                                <span class="designation">Intel Student Ambassador</span>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="team-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.linkedin.com/in/rupinder-p-s/">
+                                    <img src="assets/media/team/rupinder.jpg" alt="Team Member">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="https://www.linkedin.com/in/rupinder-p-s/">Rupinder Pal Singh</a></h4>
+                                <span class="designation">Core Member</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="team-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.linkedin.com/in/yashi-gupta-49b0151bb/">
+                                    <img src="assets/media/team/yashi.jpg" alt="Team Member">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="https://www.linkedin.com/in/yashi-gupta-49b0151bb/">Yashi Gupta</a></h4>
+                                <span class="designation">Core Member</span>
+                                <!-- <span class="designation">Specialist</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6"></div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="team-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.linkedin.com/in/aayush-deep-6ab6521b4">
+                                    <img src="assets/media/team/aayush.jpg" alt="Team Member">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="https://www.linkedin.com/in/aayush-deep-6ab6521b4">Aayush Deep</a></h4>
+                                <span class="designation">Core Member</span>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="team-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.linkedin.com/in/vishnu-manoj/">
+                                    <img src="assets/media/team/vishnu.jpg" alt="Team Member">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="https://www.linkedin.com/in/vishnu-manoj/">Vishnu Manoj</a></h4>
+                                <span class="designation">Core Member</span>
+                        
+                            </div>
+                        </div>
+                    </div>
+                 
+                   
+                </div>
+            </div>
+            <ul class="list-unstyled shape-group-10">
+                <li class="shape shape-1"><img src="assets/media/others/circle-1.png" alt="Circle"></li>
+                <li class="shape shape-2"><img src="assets/media/others/line-3.png" alt="Circle"></li>
+                <li class="shape shape-3"><img src="assets/media/others/bubble-5.png" alt="Circle"></li>
+            </ul>
+        </section>
+      
+        <section class="section section-padding-equal bg-color-light" id="join">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="800">
+                        <div class="about-us">
+                            <div class="section-heading heading-left mb-0">
+                                <span class="subtitle">Join Us</span>
+                                <h2 class="title mb--40">Join the community and stay tuned!</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 " data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                        <div class="contact-form-box">
+                            <h3 class="title">Join The Community!</h3>
                             <form id="form1" name="form1" method="POST" class="axil-contact-form">
                                 <div class="form-group">
                                     <label>Name*</label>
@@ -186,7 +328,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Reg No.*</label>
-                                    <input type="text" class="form-control" name="regno" placeholder="LPU Registration Number" required>
+                                    <input type="text" class="form-control" name="regno" placeholder="Collage Registration Number" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Phone*</label>
@@ -209,7 +351,14 @@
                     </div>
                 </div>
             </div>
+            <ul class="shape-group-6 list-unstyled">
+                <li class="shape shape-1"><img src="assets/media/others/bubble-7.png" alt="Bubble"></li>
+                <li class="shape shape-2"><img src="assets/media/others/line-4.png" alt="line"></li>
+                <li class="shape shape-3"><img src="assets/media/others/line-5.png" alt="line"></li>
+            </ul>
         </section>
+    
+       
 
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxNFwpjTJdbQmm9qqqLvKhIq-ZSy0od1YMHDFtwnb6gznFJ8V4fzxuRGaIX8MG049fiBQ/exec'
@@ -233,23 +382,60 @@
         <!--=====================================-->
         <!--=        Footer Area Start       	=-->
         <!--=====================================-->
-        <footer class="footer-area footer-dark">
+        <footer class="footer-area" id="contact">
             <div class="container">
+                <div class="footer-top">
+                    <div class="footer-social-link">
+                       
+                    </div>
+                </div>
+                <div class="footer-main">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
+                            <div class="footer-widget border-end">
+                                <div class="footer-newsletter">
+                                    <h2 class="title">Get in touch!</h2>
+                                    <p>Folow us on differt social media and join the Mail list</p>
+                                   
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
+                            <div class="row">
+                               
+                                <div class="footer-social-link">
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://facebook.com/intellpu" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/intellpu" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com//company/intellpu/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/intellpu" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.github.com/intellpu" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                
+                                
+                                <div class="footer-newsletter">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Email address">
+                                            <button class="subscribe-btn" type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="footer-bottom" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-copyright">
-                                <span class="copyright-text">© 2022. All rights reserved</span>
+                                <span class="copyright-text">© 2022. All rights reserved.</span>
                             </div>
                         </div>
-                        <!-- <div class="col-md-6">
-                            <div class="footer-bottom-link">
-                                <ul class="list-unstyled">
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-of-use.html">Terms of Use</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
+                      
                     </div>
                 </div>
             </div>
@@ -270,21 +456,22 @@
                 <div class="row ">
                     <div class="col-lg-5 col-xl-6">
                         <ul class="main-navigation list-unstyled">
-                            <li><a href="#contact">Coming Soon!</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <!-- <li><a href="#events">Upcoming Event</a></li> -->
+                            <li><a href="#team">Out Team</a></li>
+                            <li><a href="#join">Join Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
                             
                         </ul>
                     </div>
                     <div class="col-lg-7 col-xl-6">
                         <div class="contact-info-wrap">
                             <div class="contact-inner">
-                                <!-- <address class="address">
-                                    <span class="title">Contact Information</span>
-                                    <p>Theodore Lowe, Ap #867-859 <br> Sit Rd, Azusa New York</p>
-                                </address> -->
+                               
                                 <address class="address">
                                     <span class="title">Mail Us</span>
-                                    <!-- <a class="tel" href="tel:8884562790"><i class="fas fa-letter"></i>(888)
-                                        456-2790</a> -->
+                                    
                                     <a class="tel" href="mailto:inteliotlpu@gmail.com"><i class="fas fa-envelope"></i>inteliotlpu@gmail.com</a>
                                 </address>
                             </div>
@@ -292,7 +479,7 @@
                                 <h5 class="title">Find us here</h5>
                                 <div class="contact-social-share">
                                     <ul class="social-share list-unstyled">
-                                        <!-- <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li> -->
+                                     
                                         <li><a href="https://twitter.com/intellpu"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="https://www.instagram.com/intellpu/"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="https://www.linkedin.com/company/intellpu"><i class="fab fa-linkedin-in"></i></a></li>
