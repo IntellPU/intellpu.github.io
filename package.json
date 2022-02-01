@@ -1,53 +1,38 @@
 {
-  "name": "SOSC",
-  "description": "The official sosc website",
-  "version": "1.0.0",
-  "author": "Musthaq Ahamad <musthu.gm@gmail.com>",
+  "name": "intellpu",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@babel/core": "^7.16.7",
-    "babel-loader": "^8.2.3",
-    "core-js": "^2.6.11",
-    "disqus-react": "^1.0.8",
-    "gatsby": "^2.23.3",
-    "gatsby-image": "^2.4.7",
-    "gatsby-link": "^2.4.6",
-    "gatsby-plugin-google-analytics": "^2.3.4",
-    "gatsby-plugin-manifest": "^2.4.11",
-    "gatsby-plugin-nprogress": "^2.3.4",
-    "gatsby-plugin-offline": "^3.2.9",
-    "gatsby-plugin-page-transitions": "^1.0.8",
-    "gatsby-plugin-react-helmet": "^3.3.4",
-    "gatsby-plugin-sass": "^2.3.4",
-    "gatsby-plugin-sharp": "^2.6.11",
-    "gatsby-plugin-sitemap": "^2.4.5",
-    "gatsby-remark-copy-linked-files": "^2.3.5",
-    "gatsby-remark-images": "^3.3.10",
-    "gatsby-source-filesystem": "^2.3.11",
-    "gatsby-transformer-remark": "^2.8.15",
-    "gatsby-transformer-sharp": "^2.5.5",
-    "moment": "^2.26.0",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "webpack": "^4.43.0"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "prettier": "^1.19.1"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

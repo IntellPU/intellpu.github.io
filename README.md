@@ -1,118 +1,70 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/haxzie/sosc-website/master/src/images/logo_main.png"/>
-</p>
-<h1 align="center">Sahyadri OpenSource Community</h1>
+# Getting Started with Create React App
 
-Official website for Sahyadri OpenSource Community.  
-All contribution to this website including contents are made through Pull Requests. If you are new to Git and GitHub and don't know how to submit a Pull Request(PR), please refer our friendly guide on submitting your first pull request at [gitme.js.org](https://gitme.js.org).  
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-All the contents to the website is in Markdown format, Please follow the below guidelines for any contributions.  
-If you don't know how to write a markdown file, take quick look at [GitHub's markdown](https://guides.github.com/features/mastering-markdown/) guide.
+## Available Scripts
 
-## Adding your profile :boy: :girl:
-Submit a pull request by adding your profile to the `src/contents/members` directory.  
-- Create a new file with your github username and .md as extenstion. eg: `haxzie.md`
-- In the file add the following lines by filling out the details.
-```
----
-username: YOUR_GITHUB_USERNAME
-name: YOUR_FULL_NAME
-designation: YOUR_DESIGNATION_IN_SOSC
-email: YOUR_EMAIL_ADDRESS
-linkedin: YOUR_LINKEDIN_PROFILE_URL (optional)
-skills: YOUR_SKILLS (separated by comma)
----
-```
+In the project directory, you can run:
 
-eg:
-```
----
-username: haxzie
-name: Musthaq Ahamad
-designation: Community Lead
-email: example@gmail.com
-linkedin: https://www.linkedin.com/in/haxzie/
-skills: Android, Design, web, Public speaking
----
-```
+### `npm start`
 
-## Creating a new Blog Post :memo:
-To submit a new Blog post, create a new folder in the `src/contents/blogs` directory.  
-Name the folder with date of posting and slug eg: `2018-08-02--First-blog-post`.  
-Add the images you want to include in yor blog inside this directory and create a markdown file with the name `index.md`.
-Add the following frontmatter details into the markdown file followed by your blog post in markdown format.
-And finally submit a Pull Request.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-PS: 
-- Slug is where your blog post will be available on the website and the prefix `/blog/` is required to identify it as a blog.
-- Description should be written in a single line, with considerably almost 2-3 lines as viewable. Make it short and descriptive. 
-- Date should be in the format YYYY-mm-dd
-- Your author name should be your github profile url.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
----
-slug: /blog/YOUR-BLOG-POST-URL (add your post title with hyphens instead of spaces, in Lowercase only)
-date: 2018-08-02
-author: haxzie
-name: Musthaq Ahamad
-title: Second blog post
-tags: blog post
-cover: './cover.jpg'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
----
+### `npm test`
 
-# Your blog post in Markdown
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Creating a new Event :triangular_flag_on_post:
-To submit a new event details, create a folder in the `src/contents/events/` directory with the name of the event.  
-Create a new Markdown file with the name `index.md` and add any images if you want to refer in the same directory.  
-Follow the below format with all the details inside the markdown file and submit a Pull Request to this repository.
+### `npm run build`
 
-PS: 
-- Slug is where your blog post will be available on the website and the prefix `/events/` is a must to identify it as an event.
-- Date should be in the format YYYY-mm-dd
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-eg.
-```
----
-slug: /events/devhost18
-name: devhost:18
-date: 2018-12-02
-location: Seminar Hall
-cover: './cover.png'
-link: REGISTRATION_LINK (leave empty if not needed)
-feedback_link: LINK_TO_SUBMIT_THE_FEEDBACK (leave empty if not needed)
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# Other event details
-And descriptions in Markdown
-```
-## Contributing to the Project :octocat:
-We welcome Pull Requests for Bug Fixes, Missing or Fixing Documentation or even a brand new feature.  
-Open an issue with your concern and we'll help you out in the way.  
-While submitting the Pull Request make sure you have added proper comments in the code. Having a proper PR message will help us review your PR fast. Please follow consistent commit message throughout development, we follow Highlight with prefix guideline for commit messages where you need add a prefix text indicating what you have made changes in the commit.  
-A few of the prefixes are listed below.
-- FIX: Bug fix or correction
-- SFIX: Security fix
-- TYPO: any typo in docs or strings
-- RFT: refactored code
-- ADD: Added files or contents
-- FEAT: implemented a new feature
-- WIP: work in progress
-- INIT: Initialized files to start working on. 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-PS: Only use the prefix before your commit followed by an understandable commit message.
+### `npm run eject`
 
-# Meet our Contributors :tada:
-- [haxzie](https://github.com/haxzie)
-- [rumaan](https://github.com/rumaan)
-- [Chaman](https://github.com/chaman-k)
-- [Shravan](https://github.com/shravan1998)
-- [Afroz Hussain](https://github.com/coderhawk999)
-- [Nathaniel Ryan Mathew](https://github.com/nathanielmathew)
-- [DominikTrojcak](https://github.com/DominikTrojcak)
-- [David Brunnthaler](https://github.com/davidbru)
-- [Davidgorel](https://github.com/davidgorel)
-- [Pedro Féo](https://github.com/phe0)
-- [Dhanush Bangera](https://github.com/dhanushp)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
